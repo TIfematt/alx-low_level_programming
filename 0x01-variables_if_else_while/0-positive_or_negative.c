@@ -1,9 +1,8 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* main - Entry point */
-/* Return: Always 0 (success) */
-/* main - Entry point */
+/** main - Entry point 
+* Return: Always 0 (success) */
 int main(void)
 {
 	int n;

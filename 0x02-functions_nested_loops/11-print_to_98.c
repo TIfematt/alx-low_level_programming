@@ -1,10 +1,11 @@
 #include <stdio.h>
-#include "main.h"
+#include "holberton.h"
+
 /**
- * print_to_98 - check main
- * @n: An input integer
+ * print_to_98 - Check Holberton
+ * @n: A input integer
  * Description: function that prints all natural numbers
- * from n to 98, followed by a new line
+ * from n to 98, followed by a new line.
  * Return: Nothing
  */
 void print_to_98(int n)

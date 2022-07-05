@@ -1,8 +1,9 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * _isalpha - Check main
+ * _isalpha - Check Holberton
  * @c: An input character
- * Description: Function returns 1 if the character is a
+ * Description: function returns 1 if the character is a
  * letter, lowercase or uppercase.
  * Return: 1 or 0 in otherwise.
  */

@@ -1,14 +1,15 @@
-#include "main.h"
+#include "holberton.h"
+
 /**
- * times_table - Check main
+ * times_table - Check description
  * Description: It prints 9 times table starting with 0
- * Return: Nothing
+ * Return: Nothing.
  */
 void times_table(void)
 {
 	int i, j, n;
 
-	for (i = 0; j <= 9; j++)
+	for (i = 0; i <= 9; i++)
 	{
 		for (j = 0; j <= 9; j++)
 		{
@@ -38,3 +39,4 @@ void times_table(void)
 		_putchar('\n');
 	}
 }
+

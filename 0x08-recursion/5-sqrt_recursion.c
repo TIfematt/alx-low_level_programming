@@ -25,5 +25,5 @@ int _sqrt(int prev, int root)
 		return (-1);
 	else if (prev * prev == root)
 		return (prev);
-	return (_sqrt(prev + 1, rrot));
+	return (_sqrt(prev + 1, root));
 }

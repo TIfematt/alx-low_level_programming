@@ -2,13 +2,11 @@
 #include <stdlib.h>
 
 /**
- * main - This multiplies two numbers
- * @argc - Argument count
- * @argv- Argument Vector/value
- *
- * Return: 0, Error on empty value
+ * main - A program that multiplies two numbers
+ * @argc: The arguments' counter
+ * @argv: The arguments' values
+ * Return: Always 0 (Success)
  */
-
 int main(int argc, char **argv)
 {
 	int num1, num2, result;

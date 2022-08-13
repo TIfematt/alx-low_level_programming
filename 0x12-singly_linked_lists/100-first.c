@@ -1,14 +1,12 @@
 #include <stdio.h>
 
-/* Using constructors in C */
-void main_constructor(void) __attribute__((constructor));
 /**
- * main_constructor - A constructor function that prints a message
- * before main runs
- * Return: Nothing
+ * bmain - function executed before main
+ * Return: no return.
  */
-void main_constructor(void)
+
+void __attribute__ ((constructor)) bmain()
 {
-	printf("You're beat! and yet, you must allow,\n");
-	printf("I bore my house upon my back!\n");
+	printf("You're beat! and yet, you must allow");
+	printf(",\nI bore my house upon my back!\n");
 }

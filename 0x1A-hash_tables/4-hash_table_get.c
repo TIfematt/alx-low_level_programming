@@ -5,7 +5,7 @@
  *
  * @ht: pointer to the hash table
  * @key: key of the hash
- * Return: value of the hash
+ * Return: value of the hash.
  */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
@@ -28,5 +28,6 @@ char *hash_table_get(const hash_table_t *ht, const char *key)
 			return (tmp->value);
 		tmp = tmp->next;
 	}
+
 	return (NULL);
 }

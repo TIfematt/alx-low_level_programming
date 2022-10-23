@@ -1,12 +1,12 @@
 #include "hash_tables.h"
 
 /**
- * add_n_hash - adds a node at the beginning of a hash at agiven index
+ * add_n_hash - adds a node at the beginning of a hash at a given index
  *
  * @head: head of the hash linked list
- * @key: key of the harsh
- * @value: value of the store
- * Return: head of the harsh
+ * @key: key of the hash
+ * @value: value to store
+ * Return: head of the hash
  */
 hash_node_t *add_n_hash(hash_node_t **head, const char *key, const char *value)
 {
@@ -24,6 +24,7 @@ hash_node_t *add_n_hash(hash_node_t **head, const char *key, const char *value)
 		}
 		tmp = tmp->next;
 	}
+
 	tmp = malloc(sizeof(hash_node_t));
 
 	if (tmp == NULL)
@@ -36,13 +37,14 @@ hash_node_t *add_n_hash(hash_node_t **head, const char *key, const char *value)
 
 	return (*head);
 }
+
 /**
  * hash_table_set - adds a hash (key, value) to a given hash table
  *
  * @ht: pointer to the hash table
- * @key: key of the harsh
+ * @key: key of the hash
  * @value: value to store
- * Return: 1 if success, 0 on fail
+ * Return: 1 if successes, 0 if fails
  */
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
@@ -56,7 +58,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	k_index = key_index((unsigned char *)key, ht->size);
 
-	if (add_n_harsh(&(ht->array[k_index]), key, value) == NULL)
+	if (add_n_hash(&(ht->array[k_index]), key, value) == NULL)
 		return (0);
 
 	return (1);
